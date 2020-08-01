@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Оригинальный подарок</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+	<div class="main-cart dn">
+	<a href="cart.html" class="main-cart-bg">
+		<span id="main-cart-count"></span>
+	</a>
+</div>
+<header class="navigation df">	
+	<div class="container">
+		
+		<div class="menu">
+			<div class="menu-bg"></div>
+			<div class="menu-burger">☰</div>
+		</div>
+		<ul class="menu-dell menu-items df">
+			<li class="logo"><a href="#"><img src="assets/img/logo1.png" alt="Логотип"></a></li>
+
+			<li><a class="scrl-m"href="#_information">Главная</a></li>
+			<li><a class="scrl-m" href="#_about">О карте</a></li>
+			<li><a class="scrl-m" href="#_designs">Дизайны</a></li>
+			<li><a class="scrl-m" href="#_reviews">Отзывы</a></li>
+			<li><a class="scrl-m" href="#_answers">Вопросы</a></li>
+			<li><a class="scrl-m" href="#_footer">Контакты</a></li>
+			
+		</ul>
+	</div>
+</header>
+
+<!-- <section class="preview">
+	<div class="container">
+		<div class="sky">
+			<div class="stars"></div>
+			<div class="stars1"></div>
+			<div class="stars2"></div>
+			<div class="shooting-stars"></div>
+		</div>
+	</div>
+</section> -->
+<section class="info" id="_information">
+	<!-- <div class="shm-title" id="title-move">STARSHONEYMAP</div> -->
+	<div class="container">
+		<div class="layout-info-title">
+			<h1 class="info-title wow fadeInLeftBig">Подарок для дорогих вам людей</h1>
+			<!-- <div class="layout-star wow fadeInDownBig">
+				<span class="star"></span>
+				<span class="star" id="star-move"></span>
+			</div> -->
+		</div>
+		
+		<div class="info-texts">
+			<!-- <p class="info-texts-paragraph wow fadeInRight">
+				Мы создаем прекрасные звездные карты для того чтобы вы могли радовать своих близких теплыми подарками
+				</p> -->
+			<div class="rotating-text">
+				<p>Звездное небо в день </p>
+				<p>
+					<span class="word sun-flower">любого&#8194;важного&#8194;события</span>
+					<span class="word alizarin"> рождения.</span>
+					<span class="word wisteria"> годовщины.</span>
+					<span class="word peter-river">первого&#8194;поцелуя</span>
+					<span class="word emerald">новоселья.</span>
+				</p>
+			  </div>
+		</div>
+		<div class="btn-st wow fadeInLeft">
+			<a href="#_designs" class="scrl-m btn gradient-action ">Выбрать дизайн и размер</a>
+			<p class="btn-sale">Со скидкой 20%
+				<!-- <span id="btn-sale-id"></span> -->
+			</p>
+		</div>
+		<script>
+			let arr=[
+			'Января',
+			'Февраля',
+			'Марта',
+			'Апреля',
+			'Мая',
+			'Июня',
+			'Июля',
+			'Августа',
+			'Сентября',
+			'Ноября',
+			'Декабря',
+			];
+			let today = new Date();
+			let dd = String(today.getDate()).padStart(2, '0');
+			let mm = String(today.getMonth() + 1).padStart(2); //January is 0!
+			let month = arr[mm-1]
+			dd++;
+			document.getElementById('btn-sale-id').innerText = `${dd} ${month}`;
+		</script>
+	</div>
+</section>
+
+<section class="about" id='_about'>
+	<div class="container">
+		<h2 class="about-title wow fadeInDown" >Что такое Звёздная Карта?</h2>
+		<p class="about-info wow fadeInRight">
+			Звёздная карта – это <!-- уникальная --> проекция звёздного неба, которая показывает точное расположение созвездий в особый для вас момент.
+			Хотите узнать каким было небо в день вашей первой встречи, первого поцелуя, помолвки или рождения близкого человека?
+			Укажите место, дату и время важного события и удивите своих близких оригинальным подарком.
+		</p>
+		<div class="layout-about-info">
+			<video class="wow fadeInLeft" src="assets/img/video.mp4" controls loop></video>
+			<div class="layout-about-info-text" id="_shipping">
+				
+				<div class="layout-service-block" id="_shipping-active">
+					<div class="service-block service-block-big wow fadeInRight">
+						<h3 class="service-block-title">Астрономическая достоверность</h3>
+						<div class="df">
+							<img class="svg-icon" src="assets/img/calendar.svg" alt="img">
+							<p class="service-block-paragraph">
+								Мы используем открытые данные из <b>Йельского каталога ярких звёзд</b>, чтобы подарок был не просто персонализированным, но и точным. Вы сможете проверить карту на достоверность в онлайн планитарие
+							</p>
+						</div>
+					</div>
+
+					<div class="service-block wow fadeInLeft" >
+						<h3 class="service-block-title">Доставка и время</h3>
+						<div class="df">
+							<img class="svg-icon" src="assets/img/mover-truck.svg" alt="img">
+							<p class="service-block-paragraph">
+							По Украине действует <b>Бесплатная доставка</b>.
+							Доставляем "Новой Почтой" в надежной упаковке. 
+							<br> Среднее время доставки 1-3 дня.
+							<br> Срок изготовление карты <b>2 дня</b>
+							</p>
+						</div>
+					</div>
+
+					<div class="service-block wow fadeInRight">
+						<h3 class="service-block-title">Остались вопросы?</h3>
+						<div class="df">
+							<img class="svg-icon" src="assets/img/question.svg" alt="img">
+							<p class="service-block-paragraph">
+								Внизу сайта в рубрике <a href="#_answers">"Вопросы"</a> ты сможешь найти ответы на интересующие тебя вопросы. Уже хочешь заказать? Жми кнопку "Выбрать размер" под понравившимся дизайном.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="triggers">
+	<div class="container">
+		<h2 class="h2">Почему выбирают наши подарки?</h2>
+		<div class="triggers-block">
+			<div class="triggers-item">
+				<img src="assets/img/banana.svg" alt="banana">
+				<h3 class="triggers-title">Не банально</h3>
+				<p>Создавать воспоминания о приятных событиях стоит оригинально</p>
+			</div>
+			<div class="triggers-item">
+				<img src="assets/img/quality.svg" alt="quality">
+				<h3 class="triggers-title">Качественно </h3>
+				<p>Мы честно относимся к своей работе и используем качественные материалы</p>
+			</div>
+			<div class="triggers-item">
+				<img src="assets/img/package.svg" alt="love">
+				<h3 class="triggers-title">С любовью</h3>
+				<p>Мы любим дарить приятные воспоминания и получать ваши теплые отзывы</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="designs" id="_designs">
+	<div class="container">
+		<h2 class="designs-title wow fadeInDown">Дизайны</h2>
+		<div class="layout-designs-block">
+			<div class="designs-block wow fadeInLeft" data-wow-delay="0s">
+				<a href="index-design.html" class="designs-block-frame sendDesign" attr-src="compass-black" attr-design="Компасс черная">
+					<img src="assets/img/compass-black.png" alt="compass-black" class="designs-block-img">
+				</a>
+				<div class="designs-block-bottom">
+					<h3 class="designs-block-bottom-name">Звёздная карта "Компасс" черная</h3>
+
+					<p class="designs-block-bottom-paragraph">Распечатаем на премиум бумаге, холсте, соберём в рамку и надёжно упакуем.</p>
+					<p class="designs-block-bottom-price-sell">от 490 до 1400 грн</p>
+					<p class="designs-block-bottom-price">от 390 до 1120 грн</p>
+					<a href="index-design.html" attr-src="compass-black" attr-design="Компасс черная" class="btn designs-block-bottom-btn sendDesign" >Выбрать размер</a>
+				</div>
+			</div>
+			<div class="designs-block wow fadeInLeft"  data-wow-delay=".1s">
+				<a href="index-design.html" class="designs-block-frame sendDesign" attr-src="compass-white" attr-design="Компасс белая">
+					<img src="assets/img/compass-white.png" alt="compass-white" class="designs-block-img">
+				</a>
+				<div class="designs-block-bottom">
+					<h3 class="designs-block-bottom-name">Звёздная карта "Компасс" белая</h3>
+
+					<p class="designs-block-bottom-paragraph">Распечатаем на премиум бумаге, холсте, соберём в рамку и надёжно упакуем.</p>
+					<p class="designs-block-bottom-price-sell">от 490 до 1400 грн</p>
+					<p class="designs-block-bottom-price">от 390 до 1120 грн</p>
+					<a href="index-design.html" attr-src="compass-white" attr-design="Компасс белая" class="btn designs-block-bottom-btn sendDesign" >Выбрать размер</a>
+
+				</div>
+			</div>
+			<div class="designs-block wow fadeInLeft"  data-wow-delay=".2s">
+				<a href="index-design.html" class="designs-block-frame sendDesign" attr-src="heart-black" attr-design="Сердце черная">
+					<img src="assets/img/heart-black.png" alt="heart-black" class="designs-block-img">
+				</a>
+				<div class="designs-block-bottom">
+					<h3 class="designs-block-bottom-name">Звёздная карта "Сердце" черная</h3>
+					<p class="designs-block-bottom-paragraph">Распечатаем на премиум бумаге, холсте, соберём в рамку и надёжно упакуем.</p>
+					<p class="designs-block-bottom-price-sell">от 490 до 1400 грн</p>
+					<p class="designs-block-bottom-price">от 390 до 1120 грн</p>
+					<a href="index-design.html" attr-src="heart-black" attr-design="Сердце черная" class="btn designs-block-bottom-btn sendDesign" >Выбрать размер</a>
+
+				</div>
+			</div>
+			<div class="designs-block wow fadeInLeft"  data-wow-delay="0s">
+
+				<a href="index-design.html" class="designs-block-frame sendDesign" attr-src="heart-white" attr-design="Сердце белая">
+					<img src="assets/img/heart-white.png" alt="heart-white" class="designs-block-img">
+				</a>
+				<div class="designs-block-bottom">
+					<h3 class="designs-block-bottom-name">Звёздная карта "Сердце" белая</h3>
+					<p class="designs-block-bottom-paragraph">Распечатаем на премиум бумаге, холсте, соберём в рамку и надёжно упакуем.</p>
+					<p class="designs-block-bottom-price-sell">от 490 до 1400 грн</p>
+					<p class="designs-block-bottom-price">от 390 до 1120 грн</p>
+					<a href="index-design.html" attr-src="heart-white" attr-design="Сердце белая" class="btn designs-block-bottom-btn sendDesign" >Выбрать размер</a>
+
+				</div>
+			</div>
+			<div class="designs-block wow fadeInLeft"  data-wow-delay=".1s">
+				<a href="index-design.html" class="designs-block-frame sendDesign" attr-src="ribba" attr-design="Ribba">
+					<img src="assets/img/ribba.png" alt="ribba" class="designs-block-img">
+				</a>
+				<div class="designs-block-bottom">
+					<h3 class="designs-block-bottom-name">Звёздная карта "Ribba"</h3>
+					<p class="designs-block-bottom-paragraph">Распечатаем на премиум бумаге, холсте, соберём в рамку и надёжно упакуем.</p>
+					<p class="designs-block-bottom-price-sell">от 490 до 1400 грн</p>
+					<p class="designs-block-bottom-price">от 390 до 1120 грн</p>
+					<a href="index-design.html" attr-src="ribba" attr-design="Ribba" class="btn designs-block-bottom-btn sendDesign" >Выбрать размер</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+ <section class="reviews" id="_reviews">
+	 <div class="container">
+		 <h2>Отзывы Instagram</h2>
+		 <div class="reviews-block">
+
+			<a href="https://www.instagram.com/di_pand/" class="reviews-block-item reviews-block-item-show">
+				<img src="assets/img/reviews1.png" alt="reviews">
+			 </a>
+			 
+			 <a href="https://www.instagram.com/vozniak.nv/" class="reviews-block-item">
+				<img src="assets/img/reviews3.png" alt="reviews">
+			 </a>
+			 <a href="https://www.instagram.com/sabatovich_/" class="reviews-block-item">
+				<img src="assets/img/reviews4.png" alt="reviews">
+			 </a>
+			 <a href="https://www.instagram.com/soyanna__/" class="reviews-block-item">
+				<img src="assets/img/reviews5.png" alt="reviews">
+			 </a>
+			 <a href="https://www.instagram.com/lisha_jk/" class="reviews-block-item">
+				<img src="assets/img/reviews6.png" alt="reviews">
+			 </a>
+			 <a href="https://www.instagram.com/anna.poljanka/" class="reviews-block-item">
+				<img src="assets/img/reviews2.png" alt="reviews">
+			 </a>
+		 </div>
+
+	 </div>
+ </section>
+<section class="answers" id="_answers">
+	<div class="container">
+		<h2 class="answers-title wow fadeInDown">Вопросы</h2>
+    <div class="tabs wow fadeInDown">
+		<div class="tab">
+			<input type="checkbox" id="chck1">
+			<label class="tab-label" for="chck1">Что такое звёздная карта?</label>
+			<div class="tab-content">
+				Это карта, которая показывает точное расположение звёзд и созвездий над выбранным вами местом, в конкретные дату и время. Такую карту можно подарить близкому человеку на важную дату, или запечатлеть таким образом важное для вас событие.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck2">
+			<label class="tab-label" for="chck2">Как вы это делаете?</label>
+			<div class="tab-content">
+				Мы используем программу, основным источником данных для которой является Йельский каталог ярких звёзд. По такому же принципу работает большинство онлайн-планетариев в Интернете, поэтому вы всегда сможете проверить вашу карту.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck3">
+			<label class="tab-label" for="chck3">А если событие произошло давно или произойдёт в будущем?</label>
+			<div class="tab-content">
+				Карта звёздного неба составляется автоматически с помощью алгоритмов и данных, поэтому воссоздать положение звёзд в далёком прошлом или спроектировать, как они будут расположены в обозримом будущем, абсолютно возможно.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck4">
+			<label class="tab-label" for="chck4">А если событие произошло утром или днём?</label>
+			<div class="tab-content">
+				Днём звёзды никуда не деваются — мы просто не видим их из-за солнечного света. Это не фотография звёздного неба, а именно карта. Поэтому её можно сделать, даже если событие, которое вы хотите запечатлеть, произошло не ночью.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck5">
+			<label class="tab-label" for="chck5">Я не знаю ни точного, ни примерного времени события. Что делать?</label>
+			<div class="tab-content">
+				Мы можем сделать карту звёздного неба по состоянию на 12:00 или 00:00 по местному времени в выбранный вами день, и написать на карте только дату.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck6">
+			<label class="tab-label" for="chck6">Получается, карта будет уникальной?</label>
+			<div class="tab-content">
+				Да. Несмотря на то, что с Земли видно очень ограниченное количество звёзд, и их положение относительно нашей планеты циклично повторяется, это будет именно ваша карта. Уникальной её также сделает фраза или послание, которое вы придумаете сами или выберете с нашей помощью для нанесения на постер.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck7">
+			<label class="tab-label" for="chck7">Что делает карту особенной?</label>
+			<div class="tab-content">
+				Вы и ваши близкие люди. Звёздная карта — это красивый способ сказать важные слова и показать, как трепетно вы относитесь к важным датам и объединяющим вас моментам. Именно в ваших взаимоотношениях с друзьями, близкими и самим собой — всё волшебство звёздной карты.
+			</div>
+		</div>
+		<div class="tab">
+			<input type="checkbox" id="chck8">
+			<label class="tab-label" for="chck8">Доставка, время изготовления, как сделать заказ, оплата</label>
+			<div class="tab-content">
+				1. В пределах Украине действует бесплатная доставка. Среднее время доставки 1-3 дня <br>
+				2. Изготовление карты занимает 2 дня, но если вы не успеваете мы можем сделать для вас электронную версию карты (pdf) и отправить вам с рекомендациями по печати, стоимость такой карты 490грн <br>
+				3. Сделать заказ вы можете через сайт выбрав дизайн и нажав под ним кнопку "выбрать размер" или написав нам в <a href="">Direct</a> <br>
+				Далее вам нужно будет оплатить заказ. После оплаты ваш заказ поступит в обработку а вы получите чек на почту или телефон.
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+<footer class="footer" id="_footer">
+	<div class="container">
+		<ul class="contact menu-dell">
+			<li><a href="" title="viber"><img src="assets/img/viber.svg" alt="viber"></a></li>
+			<li><a href="" title="instagram"><img src="assets/img/instagram.svg" alt="instagram"></a></li>
+			<li><a href="" title="telegram"><img src="assets/img/telegram.svg" alt="telegram"></a></li>
+			<li><span>ingvar@starshoneymap.com</span></li>
+		</ul>
+	</div>
+	<div class="pay-methods">
+		<div class="container">
+			<img src="assets/img/mastercard.svg" alt="mastercard" class="mscard">
+			<img src="assets/img/visa.png" alt="visa" class="vscard">
+			<img src="assets/img/logo_PrivatBank.png" alt="privatbank" class="prvcard">
+		</div>
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="tracked/app.js"></script>
+<script src="tracked/land.js"></script>
+</body>
+</html>
